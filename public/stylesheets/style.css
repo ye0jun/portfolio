@@ -1,0 +1,101 @@
+.mh-300{
+  min-height: 300px;
+}
+
+.mh-250{
+  min-height: 250px;
+}
+
+.card {
+  margin: auto auto; /* Added */
+  float: none; /* Added */
+}
+
+.projectImage{
+  object-fit: cover;
+}
+
+.imageContainer:hover .projectImage {
+  opacity: 0.3;
+}
+
+.imageContainer:hover .imageOveray {
+  opacity: 1;
+}
+
+.projectImage {
+  opacity: 1;
+  /* display: block; */
+  /* width: 100%; */
+  /* height: auto; */
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.imageOveray {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageContainer {
+  cursor: pointer;
+}
+
+#plusImageContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+
+#plusImageBackground{
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.7;
+}
+
+#plusImageContent{
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0px);
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.plusImage{
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
